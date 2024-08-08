@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEITE Website</title>
+  <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Welcome to CEITE</h1>
+      <p>Sabay-sabay tayong magdrop</p>
+      <img src="illustration.png" alt="Illustration">
+    </div>
+    <div class="right-panel">
+      <div class="form-container">
+        <div class="form-toggle">
+          <button id="loginToggle" class="active">Sign in</button>
+          <button id="registerToggle">Create an Account</button>
+        </div>
+        <form id="loginForm" class="active">
+          <h2>Sign in to CEITE</h2>
+          <div class="input-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+          </div>
+          <div class="input-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+          </div>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+          <button type="submit" class="btn">Continue</button>
+        </form>
+        <form id="registerForm" class="hidden">
+          <h2>Create an Account</h2>
+          <div class="input-group">
+            <label for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" required>
+          </div>
+          <div class="input-group">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" required>
+          </div>
+          <div class="input-group">
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" required>
+          </div>
+          <button type="submit" class="btn">Continue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
